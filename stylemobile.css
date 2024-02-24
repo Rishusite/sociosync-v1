@@ -130,7 +130,7 @@
   .messages-mobile{
     position: fixed;
     top: 9vh;
-    bottom: 17vh;
+    bottom: 10vh;
     right: 5vw;
     left: 5vw;
     background-color: rgb(254, 229, 251);
