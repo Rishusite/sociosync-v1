@@ -88,28 +88,6 @@ function closeMessage(){
 
 /*-----------------------------Dark Mode--------------------------*/
 
-/*
-let toggle=0;
-function changeTheme(){
-  let elem=document.querySelector("body");
-  elem.classList.forEach((value,index)=>{
-    if(value==="darkmode"){
-      toggle=1;
-    }
-  })
-  if(toggle===0)
-  {
-    elem.classList.add("darkmode");
-    toggle=1;
-  }
-  else
-  {
-    elem.classList.remove("darkmode");
-    toggle=0;
-  }
-  
-}
-*/
 let toggle=0;
 function changeTheme(){
   if(toggle)
@@ -119,6 +97,9 @@ function changeTheme(){
     rootElement.style.setProperty('--background-theme','');
     rootElement.style.setProperty('--whitecolor','');
     rootElement.style.setProperty('--font-color','');
+    rootElement.style.setProperty('--original-theme','');
+    rootElement.style.setProperty('--story-shadow','');
+    rootElement.style.setProperty('--mobile-sidemenu-bgcolor','');
     toggle=0;
   }
   else
@@ -128,9 +109,17 @@ function changeTheme(){
     let darkElem=x.getPropertyValue('--dark-background-theme');
     let darkElem2=x.getPropertyValue('--dark-whitecolor');
     let darkElem3=x.getPropertyValue('--dark-font-color');
+    let darkElem4=x.getPropertyValue('--dark-original-theme');
+    let darkElem5=x.getPropertyValue('--dark-story-shadow');
+    let darkElem6=x.getPropertyValue('--dark-mobile-sidemenu-bgcolor');
+
     rootElement.style.setProperty('--background-theme',darkElem);
     rootElement.style.setProperty('--whitecolor',darkElem2);
     rootElement.style.setProperty('--font-color',darkElem3);
+    rootElement.style.setProperty('--font-color',darkElem3);
+    rootElement.style.setProperty('--original-theme',darkElem4);
+    rootElement.style.setProperty('--story-shadow',darkElem5);
+    rootElement.style.setProperty('--mobile-sidemenu-bgcolor',darkElem6);
     toggle=1;
   }
   
