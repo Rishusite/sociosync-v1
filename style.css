@@ -16,18 +16,20 @@
   --message-highlight: rgb(255, 0, 0);
   --overlayfordp-color: rgba(142, 142, 143, 0.703);
   --font-color: rgb(0, 0, 0);
+  --mobile-sidemenu-bgcolor: rgba(250, 203, 250, 0.838);
   /*------------------Dark Theme------------------*/
-  --dark-original-theme:rgb(39, 0, 101);
-  --dark-background-theme:rgb(48, 48, 48);
+  --dark-original-theme:rgba(100, 3, 254, 0.847);
+  --dark-background-theme:rgb(37, 32, 48);
   --dark-background-theme2:rgba(248, 245, 252, 0.929);
-  --dark-whitecolor:rgb(142, 140, 143);
+  --dark-whitecolor:rgb(72, 66, 86);
   --dark-blackcolor: rgb(0,0,0);
   --dark-buttonhover:rgba(93, 3, 238, 0.7);
   --dark-sidebar-items-hover: rgba(189, 149, 252, 0.811);
-  --dark-story-shadow: rgb(180, 180, 180);
+  --dark-story-shadow: rgba(180, 180, 180, 0.452);
   --dark-message-highlight: rgb(255, 0, 0);
   --dark-overlayfordp-color: rgba(142, 142, 143, 0.703);
   --dark-font-color: rgb(255, 255, 255);
+  --dark-mobile-sidemenu-bgcolor: rgb(37, 32, 48);
   /*----------------Font Sizes------------------*/
   
 }
@@ -72,22 +74,26 @@ body{
   justify-content: space-between;
   align-items: center;
 }
+
 #logo{
   font-size: 30px;
 }
-#searchbox{
-  background-image: url('icons/search.png');
-  background-position: 15px 10px;
-  background-repeat: no-repeat;
-  background-size: 25px;
-  padding-left: 70px;
-  padding-right: 350px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 20px;
-  border-radius: 20px;
-  border: none;
+.search{
+  display: flex;
+  align-items: center;
   background-color: var(--background-theme);
+  color: var(--font-color);
+  border-radius: 2rem;
+  padding: 1.2vh 1vw;
+}
+#searchbox{
+  border: none;
+  outline: none;
+  font-size: 1.5vw;
+  background-color: transparent;
+  padding-left: 1vw;
+  padding-right: 24vw;
+  
 }
 #create-button,#create-post-button{
   background-color: var(--original-theme);
@@ -99,7 +105,7 @@ body{
   padding-bottom: 10px;
   border-radius: 70px;
   border: none;
-  color: var(--whitecolor);
+  color: white;
   cursor: pointer;
   transition: background-color 0.2s;
 }
@@ -133,6 +139,7 @@ body{
   display: flex;
   border-radius: 15px;
   background-color: var(--whitecolor);
+  color: var(--font-color);
   flex-direction: row;
   height: 80px;
   margin-bottom: 20px;
@@ -163,7 +170,7 @@ body{
   padding-left: 25px;
   padding-top: 5px;
   text-decoration: none;
-  color: var(--blackcolor);
+  color: var(--font-color);
   transition: background-color 0.3s;
 }
 .menu ul li p{
@@ -210,6 +217,7 @@ body{
   margin-right: 0;
   padding-left: 62px;
   padding-right: 62px;
+  color: white;
 }
 #create-post-button:hover{
   background-color: var(--buttonhover);
@@ -265,6 +273,7 @@ body{
   font-size: 25px;
   width: 100%;
   border: none;
+  outline: none;
   background-color: var(--whitecolor);
 }
 #search-button{
@@ -279,7 +288,7 @@ body{
   padding-bottom: 5px;
   border-radius: 70px;
   border: none;
-  color: var(--whitecolor);
+  color: white;
   cursor: pointer;
   transition: background-color 0.2s;
 }
@@ -372,6 +381,7 @@ body{
     font-size: 1.1em;
     padding: 0.8vw 2vw;
     border: none;
+    outline: none;
     background-color: var(--background-theme);
     border-radius: 50px;
   }
@@ -432,6 +442,7 @@ body{
       padding-left: 140px;
       padding-top: 2px;
       font-weight:300;
+      color: black;
     }
     img{
       position: absolute;
@@ -498,6 +509,7 @@ body{
       padding-left: 25%;
       padding-top: 1%;
       font-size: 2vw;
+      color: black;
     }
     .cross-button{
       position: absolute;
@@ -520,10 +532,12 @@ body{
         position: relative;
         height: 100%;
         padding: 10% 10%;
+        color: black;
         #to-message{
           margin-left: 10%;
           padding: 0.5vw 1vw;
           font-size: 1vw;
+          
         }
         #what-message{
           padding: 0.5vw 1vw;
