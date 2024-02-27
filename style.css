@@ -17,6 +17,7 @@
   --overlayfordp-color: rgba(142, 142, 143, 0.703);
   --font-color: rgb(0, 0, 0);
   --mobile-sidemenu-bgcolor: rgba(250, 203, 250, 0.838);
+  --messages-p2: rgb(71, 71, 71);
   /*------------------Dark Theme------------------*/
   --dark-original-theme:rgba(100, 3, 254, 0.847);
   --dark-background-theme:rgb(37, 32, 48);
@@ -30,6 +31,7 @@
   --dark-overlayfordp-color: rgba(142, 142, 143, 0.703);
   --dark-font-color: rgb(255, 255, 255);
   --dark-mobile-sidemenu-bgcolor: rgb(37, 32, 48);
+  --dark-messages-p2: rgb(211, 211, 211);
   /*----------------Font Sizes------------------*/
   
 }
@@ -352,7 +354,7 @@ body{
   font-size: 20px;
 }
 
-          /*-------------------Side-right-section----------------*/
+          /*-------------------Messages----------------*/
 .messages{
   background-color: var(--whitecolor);
   border-radius: 20px;
@@ -400,9 +402,13 @@ body{
       }
       .name-message{
         padding-left: 0.7vw;
+        
         .p1{
           font-weight: bold;
           margin-bottom: 0.5vh;
+        }
+        .p2{
+          color: var(--messages-p2);
         }
       }
     }
