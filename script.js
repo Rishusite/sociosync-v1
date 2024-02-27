@@ -100,6 +100,7 @@ function changeTheme(){
     rootElement.style.setProperty('--original-theme','');
     rootElement.style.setProperty('--story-shadow','');
     rootElement.style.setProperty('--mobile-sidemenu-bgcolor','');
+    rootElement.style.setProperty('--messages-p2','');
     toggle=0;
   }
   else
@@ -112,6 +113,7 @@ function changeTheme(){
     let darkElem4=x.getPropertyValue('--dark-original-theme');
     let darkElem5=x.getPropertyValue('--dark-story-shadow');
     let darkElem6=x.getPropertyValue('--dark-mobile-sidemenu-bgcolor');
+    let darkElem7=x.getPropertyValue('--dark-messages-p2');
 
     rootElement.style.setProperty('--background-theme',darkElem);
     rootElement.style.setProperty('--whitecolor',darkElem2);
@@ -120,6 +122,7 @@ function changeTheme(){
     rootElement.style.setProperty('--original-theme',darkElem4);
     rootElement.style.setProperty('--story-shadow',darkElem5);
     rootElement.style.setProperty('--mobile-sidemenu-bgcolor',darkElem6);
+    rootElement.style.setProperty('--messages-p2',darkElem7);
     toggle=1;
   }
   
