@@ -160,9 +160,10 @@
     .message-input{
       margin-top: 2vh;
       margin-bottom: 2vh;
-      font-size: 6vw;
+      font-size: 5.5vw;
       padding: 1vw 2vw;
       border: none;
+      outline: none;
       background-color: var(--background-theme);
       border-radius: 50px;
     }
@@ -183,11 +184,14 @@
           }
         }
         .name-message{
-          font-size: 5vw;
+          font-size: 4vw;
           .p1{
-            font-size: 6vw;
+            font-size: 5vw;
             font-weight: bold;
             margin-bottom: 0.5vh;
+          }
+          .p2{
+            color: var(--messages-p2);
           }
         }
       }
@@ -202,10 +206,10 @@
   .overlay-for-dp{
     .overlay-dp{
       width: 90vw;
-      height: 60vh;
+      height: 55vh;
       p{
         font-size: 8vw;
-        padding-left: 20vw;
+        padding-left: 18vw;
         padding-top: 0.5vh;
         font-weight:300;
       }
